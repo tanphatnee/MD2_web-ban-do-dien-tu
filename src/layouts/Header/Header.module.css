@@ -1,0 +1,60 @@
+.wrapper {
+    height: 123px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  .inner {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .logo {
+    width: 170px;
+    height: 57px;
+  }
+  .phone-wrap {
+    display: flex;
+  }
+  .phone-icon {
+    font-size: 35px;
+    color: var(--primary-color);
+  }
+  .phone {
+    margin-left: 6px;
+  }
+  .phone-text, .acount-text {
+    font-size: 1.4rem;
+    color: #323c42;
+    display: block;
+  }
+  .phone-number {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 3px;
+  }
+  .user-account {
+    display: flex;
+  }
+  .account {
+    margin-left: 6px;
+  }
+  .user-img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .login, .username {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  

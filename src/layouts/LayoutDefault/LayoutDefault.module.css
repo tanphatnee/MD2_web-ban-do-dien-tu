@@ -1,0 +1,9 @@
+.wrapper {
+    width: 100%;
+  }
+  .content {
+    width: 1200px;
+    min-height: 1000px;
+    margin: auto;
+  }
+  

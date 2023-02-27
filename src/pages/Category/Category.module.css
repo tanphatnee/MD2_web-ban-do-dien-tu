@@ -1,0 +1,110 @@
+.wrapper {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .filter {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .filter-heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 20px;
+    background: #eb3e32;
+    color: #fff;
+    padding: 5px 10px;
+  }
+  .filter-list {
+    list-style: none;
+    padding: 10px;
+  }
+  .filter-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+    display: block;
+  }
+  .filter-item {
+    display: flex;
+    margin: 10px 0;
+  }
+  .filter-item input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .filter-item-title {
+    font-size: 1.4rem;
+    color: #323c42;
+    margin-left: 10px;
+  }
+  .sort-product {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .sort-by {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  .sort {
+    font-size: 1.4rem;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid #e4e1e1;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  .sort .caret-down {
+    font-size: 1.6rem;
+  }
+  @keyframes showSortList {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .sort-list {
+    width: 180px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 6px 0;
+    animation: showSortList ease 0.2s;
+  }
+  .sort-list .sort-item {
+    font-size: 1.4rem;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .sort-list .sort-item:hover {
+    color: #ffb416;
+  }
+  .product-list {
+    width: 100%;
+  }
+  .pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .pagination .list {
+    display: inline-flex;
+  }
+  .pagination .item {
+    padding: 10px 15px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+  }
+  .pagination .item.active {
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  .pagination .item:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  
