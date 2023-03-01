@@ -21,7 +21,7 @@ function Cart() {
                 <div className={cx('cart-inner')}  {...attrs}>
                     {isCartList ?
                         <>
-                            <div className={cx('cart-list')}>
+                            {/* <div className={cx('cart-list')}>
                                 <div className={cx('cart-item')}>
                                     <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
                                     <div className={cx('infos')}>
@@ -33,11 +33,11 @@ function Cart() {
                                         <span className={cx('remove')}>Xóa</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div className={cx('cart-total-price')}>
+                            </div> */}
+                            {/* <div className={cx('cart-total-price')}>
                                 <span className={cx('total-price-text')}>Thành tiền</span>
                                 <span className={cx('total-price')}>17.380.000đ</span>
-                            </div>
+                            </div> */}
                             <Link to={config.cart}> <button className={cx('view-cart-btn')}>Xem giỏ hàng</button></Link>
                         </>
                         :

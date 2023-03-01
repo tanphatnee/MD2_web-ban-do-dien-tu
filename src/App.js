@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LayoutDefault from './layouts/LayoutDefault/LayoutDefault';
-import { routes } from './Routes'
+import {  Router, routes } from './Routes';
+
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                 element={
                   <Layout>
                     <Page />
+                   
                   </Layout>
                 }
               />

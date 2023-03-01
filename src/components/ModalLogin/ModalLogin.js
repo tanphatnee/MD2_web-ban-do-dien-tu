@@ -10,10 +10,13 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 
 import { ModalContext } from "../ModalProvider";
 import style from './ModalLogin.module.css';
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const cx = classNames.bind(style);
-
+        
 function ModalLogin() {
+    const navigate = useNavigate();
 
     const context = useContext(ModalContext);
 
@@ -41,7 +44,37 @@ function ModalLogin() {
         }
     }, [isEyeOff, isEyeOpen])
 
+    const handleSubmit=()=>{
+       
+        if(!isRegister){
+            // đăng nhập
+            axios.get('http://localhost:3000/users?user='+user+'&pass='+pass)
+            .then(res=>{
+                if(res.data.length > 0){
+                alert("Đăng nhập thành công !")
+                localStorage.setItem('user',JSON.stringify(res.data));
+                window.location.reload()
 
+                }else{
+                    alert("Tên đăng nhập hoặc mật khẩu không đúng !")
+                }
+            })
+        }else{
+          
+            axios.post("http://localhost:3000/users",{user,pass,passConfirm})
+            .then((response)=>{
+                localStorage.setItem('user',response.data);
+                setIsRegister(false);
+                setUser("")
+                setPass("")
+                setPassConfirm("")
+            }).catch((error)=>{
+                console.log(error);
+            })
+            //đăng ký
+      
+        }
+    }
 
     const handleWhenEnterPass = (e) => {
         if (e.target.value.length > 0) {
@@ -129,7 +162,8 @@ function ModalLogin() {
                             onChange={e => setPassConfirm(e.target.value)}
                         />
                     </div>)}
-                    <button className={cx('btn-submit')}>{!isRegister ? 'Đăng nhập' : 'Đăng ký'}</button>
+        
+                    <button className={cx('btn-submit')} onClick={handleSubmit}>{!isRegister ? 'Đăng nhập' : 'Đăng ký'}</button>
                     <span className={cx('other-login-text')}>{!isRegister ? 'Hoặc đăng nhập với' : 'Hoặc đăng ký với'}</span>
                     <div className={cx('socials')}>
                         <div className={cx('social-fb')}>

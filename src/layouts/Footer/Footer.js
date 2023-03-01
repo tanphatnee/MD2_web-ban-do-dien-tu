@@ -10,23 +10,23 @@ const cx = classNames.bind(style);
 const infos1 = [
     'Công ty cổ phần thương mại VMart',
     'Địa chỉ: A12, Đinh Tiên Hoàng, Q. Hoàn Kiếm, Hà Nội ',
-    'Điện thoại: 0378740576 ',
-    'Email: nvtphat2k4@gmail.com'
+    'Điện thoại: 0999999999 ',
+    'Email:phatnp@gmail.com'
 ];
 
 const infos2 = [
     { icon: <FaMapMarked />, content: 'Xem bản đồ đường đi' },
-    { icon: <FaPhoneAlt />, content: 'Điện thoại: 0378740576' },
+    { icon: <FaPhoneAlt />, content: 'Điện thoại: 0999999999' },
     { icon: <FaMapMarkerAlt />, content: 'Địa chỉ: A12, Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội' },
-    { icon: <MdEmail />, content: 'Email: nvtphat2k4@gmail.com' },
+    { icon: <MdEmail />, content: 'Email:phat@gmail.com' },
     { icon: <BsClockFill />, content: 'Giờ mở cửa: Các ngày trong tuần: 9h00 - 22h00' },
 ];
 
 const infos3 = [
-    'Gọi mua: 0123456789 (7:30 - 22:00)',
-    'Kỹ thuật: 0123456789 (7:30 - 22:00)',
-    'Khiếu nại: 0123456789 (8:00 - 21:30)',
-    'Bảo hành: 0123456789 (8:00 - 21:00)',
+    'Gọi mua: 0999999999 (7:30 - 22:00)',
+    'Kỹ thuật: 0999999999 (7:30 - 22:00)',
+    'Khiếu nại: 0999999999 (8:00 - 21:30)',
+    'Bảo hành: 00999999999 (8:00 - 21:00)',
 ];
 
 

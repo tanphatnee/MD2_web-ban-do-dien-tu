@@ -41,7 +41,7 @@ function Header() {
                     <div className={cx('account')}>
                         <span className={cx('acount-text')}>{isUserLogin ? 'Xin chào' : 'Tài khoản'}</span>
                         {isUserLogin ?
-                            <span className={cx('username')}>Phương Nhi</span>
+                            <span className={cx('username')}></span>
                             :
                             <span className={cx('login')} onClick={() => context.handleModalOpen()}>Đăng nhập</span>
                         }
